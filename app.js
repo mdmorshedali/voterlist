@@ -830,68 +830,6 @@ setTimeout(() => {
 }, 500);
 
 
-function fastVisitorCounter() {
-   
-    let c = localStorage.visitorCount || 0;
-    c = parseInt(c) + 1;
-    localStorage.visitorCount = c;
-    
-    
-    const bn = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
-    const bc = c.toString().replace(/\d/g, d => bn[d]);
-    
-    
-    function add() {
-        const f = document.querySelector('.footer-stats');
-        if (f) {
-            const old = document.querySelector('.visitor-stat');
-            if (old) old.remove();
-            
-            const s = document.createElement('div');
-            s.className = 'stat visitor-stat';
-            s.innerHTML = `<i class="fas fa-eye"></i><span>সাইট ভিজিট: <b>${bc}</b></span>`;
-            f.prepend(s);
-        }
-    }
-    
-   
-    add();
-    
-    
-    if (!document.querySelector('.visitor-stat')) {
-        setTimeout(add, 100);
-    }
-}
 
 
-if (document.readyState === 'complete') {
-    fastVisitorCounter();
-} else {
-    window.addEventListener('load', fastVisitorCounter);
-}
-
-
-if (window.renderFooter) {
-    const orig = renderFooter;
-    renderFooter = function() {
-        orig();
-        setTimeout(() => {
-            const c = localStorage.visitorCount || '0';
-            const bn = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
-            const bc = c.toString().replace(/\d/g, d => bn[d]);
-            const f = document.querySelector('.footer-stats');
-            if (f) {
-                const old = document.querySelector('.visitor-stat');
-                if (old) old.remove();
-                const s = document.createElement('div');
-                s.className = 'stat visitor-stat';
-                s.innerHTML = `<i class="fas fa-eye"></i><span>সাইট ভিজিট: <b>${bc}</b></span>`;
-                f.prepend(s);
-            }
-        }, 50);
-    };
-}
-
-console.log(" ভোটার সার্চ সিস্টেম চালু হয়েছে!");
-console.log(` মোট ভোটার: ${voterDatabase.totalVoters}`);
 
