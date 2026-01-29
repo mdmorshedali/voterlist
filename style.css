@@ -1,15 +1,14 @@
-/* Md Morshed Ali */
+/* this code writen by md morshed ali */
+
 @font-face {
-  font-family: 'SolaimanLipi';
-  src: url('https://cdn.jsdelivr.net/gh/omicreo/bangla-fonts@main/fonts/SolaimanLipi/SolaimanLipi.ttf') format('truetype');
+  font-family: 'Kalpurush';
+  src: url('https://cdn.jsdelivr.net/gh/faisal631/bangla-fonts@latest/fonts/Kalpurush/Kalpurush.ttf') format('truetype');
 }
 
-/* Md Morshed Ali */
-* {
-    font-family: 'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* md morshed ali */
+@font-face {
+  font-family: 'Siyam Rupali';
+  src: url('https://cdn.jsdelivr.net/gh/faisal631/bangla-fonts@latest/fonts/SiyamRupali/SiyamRupali.ttf') format('truetype');
 }
 
 body {
@@ -1553,6 +1552,7 @@ body.dark-mode .search-input {
     }
 
 }
+
 
 
 
