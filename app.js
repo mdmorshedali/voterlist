@@ -36,7 +36,7 @@ const containsNumbers = (str) => {
 
 // md morshed ali
 let state = {
-    searchType: 'voter_id',
+    searchType: 'name',
     searchQuery: '',
     searchResults: [],
     selectedVoter: null,
@@ -46,7 +46,7 @@ let state = {
     loading: false,
     error: '',
     inputValid: true,
-    hintMessage: '💡 আপনি বাংলা বা ইংরেজি উভয় সংখ্যা ব্যবহার করতে পারেন',
+    hintMessage: 'আপনার নামের যে কোন অংশ বাংলায় লিখুন'',
     totalVoters: voterDatabase.totalVoters,
     maleVoters: voterDatabase.maleVoters,
     femaleVoters: voterDatabase.femaleVoters,
@@ -828,6 +828,7 @@ setTimeout(() => {
     const inputField = document.getElementById('search-input-field');
     if (inputField) inputField.focus();
 }, 500);
+
 
 
 
