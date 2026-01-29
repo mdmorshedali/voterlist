@@ -1,15 +1,17 @@
-/* this code writen by md morshed ali */
-/* সমাধান 3A: Kalpurush ফন্ট */
 @font-face {
   font-family: 'Kalpurush';
-  src: url('https://cdn.jsdelivr.net/gh/faisal631/bangla-fonts@main/fonts/Kalpurush/Kalpurush.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/faisal631/bangla-fonts/main/fonts/Kalpurush/Kalpurush.ttf') format('truetype'),
+       url('https://github.com/faisal631/bangla-fonts/raw/main/fonts/Kalpurush/Kalpurush.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* সমাধান 3B: Google Fonts - Hind Siliguri (সবচেয়ে নির্ভরযোগ্য) */
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 
 * {
-    font-family: 'Kalpurush', 'Hind Siliguri', 'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
+   
+    font-family: 'Kalpurush', 'Hind Siliguri', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -1556,6 +1558,7 @@ body.dark-mode .search-input {
     }
 
 }
+
 
 
 
