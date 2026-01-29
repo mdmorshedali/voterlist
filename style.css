@@ -1,12 +1,9 @@
 /* Md Morshed Ali */
 @font-face {
-    font-family: 'SolaimanLipi';
-    src: url('https://cdn.rawgit.com/mahmudahsan/fonts/refs/heads/main/solaiman-lipi/solaimanlipi.woff2') format('woff2'),
-         url('https://cdn.rawgit.com/mahmudahsan/fonts/refs/heads/main/solaiman-lipi/solaimanlipi.woff') format('woff'),
-         url('https://cdn.rawgit.com/mahmudahsan/fonts/refs/heads/main/solaiman-lipi/solaimanlipi.ttf') format('truetype'),
-        url('https://cdn.jsdelivr.net/gh/mahmudahsan/fonts/solaiman-lipi/solaimanlipi.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/mahmudahsan/fonts/solaiman-lipi/solaimanlipi.ttf') format('truetype');
-    font-display: swap;
+  font-family: 'SolaimanLipi';
+  src: url('https://cdn.jsdelivr.net/gh/mahmudahsan/fonts@main/solaiman-lipi/solaimanlipi.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/mahmudahsan/fonts@main/solaiman-lipi/solaimanlipi.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/mahmudahsan/fonts@main/solaiman-lipi/solaimanlipi.ttf') format('truetype');
 }
 
 /* Md Morshed Ali */
@@ -1558,3 +1555,4 @@ body.dark-mode .search-input {
     }
 
 }
+
