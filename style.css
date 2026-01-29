@@ -1,35 +1,27 @@
-/* Md Morshed Ali */
-@font-face {
-    font-family: 'SolaimanLipi';
-    src: url('https://cdn.rawgit.com/mahmudahsan/fonts/refs/heads/main/solaiman-lipi/solaimanlipi.woff2') format('woff2'),
-         url('https://cdn.rawgit.com/mahmudahsan/fonts/refs/heads/main/solaiman-lipi/solaimanlipi.woff') format('woff'),
-         url('https://cdn.rawgit.com/mahmudahsan/fonts/refs/heads/main/solaiman-lipi/solaimanlipi.ttf') format('truetype');
-    
-}
+/* This code is writen by Md Morshed Ali */
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
 
-/* Md Morshed Ali */
 * {
-    font-family: 'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
+
+    font-family: 'SolaimanLipi', 'Solaiman Lipi', 'Noto Sans Bengali', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
+
 body {
+
     font-family: 'SolaimanLipi', 'Solaiman Lipi', 'Noto Sans Bengali', sans-serif !important;
     margin: 0;
     padding: 0;
     min-height: 100vh;
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
     transition: all 0.3s ease;
-}
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-    transition: all 0.3s ease;
 }
 
 /* Md Morshed Ali */
@@ -1565,6 +1557,7 @@ body.dark-mode .search-input {
     }
 
 }
+
 
 
 
