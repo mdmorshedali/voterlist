@@ -511,15 +511,15 @@ function renderNotFound() {
             <div class="not-found-tips">
                 <div class="tip">
                     <i class="fas fa-lightbulb"></i>
-                    <span>নাম সার্চের ক্ষেত্রে "মোঃ" বা "মোসাঃ" না লিখে সরাসরি নাম লিখুন</span>
+                    <span>নাম সার্চের ক্ষেত্রে এনআইডি অনুযায়ী নাম লিখুন</span>
                 </div>
                 <div class="tip">
                     <i class="fas fa-lightbulb"></i>
-                    <span>নামের অংশ লিখলেও চলবে যেমন: "আলী" বা "হোসেন"</span>
-                </div>
+                    <span>অথবা নামের আংশিক অংশ লিখুন</span>
+                </div> 
                 <div class="tip">
                     <i class="fas fa-lightbulb"></i>
-                    <span>কোন সমস্যা হলে সরাসরি ০১৩০৬৯৬০১৬১ নম্বরে কল করুন</span>
+                    <span>কোন সমস্যা, উপদেশ এর জন্য সরাসরি ০১৩০৬৯৬০১৬১ নম্বরে কল করুন</span>
                 </div>
             </div>
         </div>
@@ -894,3 +894,4 @@ if (window.renderFooter) {
 
 console.log(" ভোটার সার্চ সিস্টেম চালু হয়েছে!");
 console.log(` মোট ভোটার: ${voterDatabase.totalVoters}`);
+
