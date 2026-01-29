@@ -1,9 +1,7 @@
 /* Md Morshed Ali */
 @font-face {
   font-family: 'SolaimanLipi';
-  src: url('https://raw.githubusercontent.com/mahmudahsan/fonts/main/solaiman-lipi/solaimanlipi.woff2') format('woff2'),
-       url('https://raw.githubusercontent.com/mahmudahsan/fonts/main/solaiman-lipi/solaimanlipi.woff') format('woff'),
-       url('https://raw.githubusercontent.com/mahmudahsan/fonts/main/solaiman-lipi/solaimanlipi.ttf') format('truetype');
+  src: url('https://cdn.jsdelivr.net/gh/omicreo/bangla-fonts@main/fonts/SolaimanLipi/SolaimanLipi.ttf') format('truetype');
 }
 
 /* Md Morshed Ali */
@@ -1555,5 +1553,6 @@ body.dark-mode .search-input {
     }
 
 }
+
 
 
