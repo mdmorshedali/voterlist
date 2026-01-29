@@ -1,13 +1,15 @@
-@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+/* Md Morshed Ali */
+@font-face {
+    font-family: 'SolaimanLipi';
+    src: url('https://cdn.rawgit.com/mahmudahsan/fonts/refs/heads/main/solaiman-lipi/solaimanlipi.woff2') format('woff2'),
+         url('https://cdn.rawgit.com/mahmudahsan/fonts/refs/heads/main/solaiman-lipi/solaimanlipi.woff') format('woff'),
+         url('https://cdn.rawgit.com/mahmudahsan/fonts/refs/heads/main/solaiman-lipi/solaimanlipi.ttf') format('truetype');
+    
+}
 
-@import url('https://cdn.maateen.me/solaiman-lipi/font.css');
-
-@import url('https://fonts.maateen.me/solaiman-lipi/solaiman-lipi.css');
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700&display=swap');
-
+/* Md Morshed Ali */
 * {
-    font-family: 'SolaimanLipi', 'Solaiman Lipi', 'Noto Sans Bengali', sans-serif !important;
+    font-family: 'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -1563,6 +1565,7 @@ body.dark-mode .search-input {
     }
 
 }
+
 
 
 
