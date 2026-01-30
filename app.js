@@ -169,6 +169,7 @@ function renderHeader() {
                 <div class="tagline-badge">
                     ন্যায্যতা ও ইনসাফের বাংলাদেশ গড়তে <b class="text-yellow-400">দাঁড়িপাল্লায়</b> ভোট দিন
                 </div>
+                <div> </br><h5 class="subtitle">গণভোট ২০২৬-কে "হ্যাঁ" বলুন।</h5> </div>
             </div>
             
             <button 
@@ -828,6 +829,7 @@ setTimeout(() => {
     const inputField = document.getElementById('search-input-field');
     if (inputField) inputField.focus();
 }, 500);
+
 
 
 
