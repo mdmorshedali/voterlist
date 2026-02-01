@@ -3985,7 +3985,7 @@ const voterDatabase = {
         "voter_no": "810399753717",
         "father": "মো: জালাল উদ্দীন",
         "mother": "মোসা: তাহেরা বেগম",
-        "profession": "驱动器",
+        "profession": "ড্রাইভার",
         "dob": "23/09/1985",
         "address": "হাতনাবাদ, গোদাগাড়ী, রাজশাহী",
         "gender": "পুরুষ"
@@ -4150,7 +4150,7 @@ const voterDatabase = {
         "voter_no": "810399753749",
         "father": "আফজাল হোসেন",
         "mother": "মরিয়ম নেসা",
-        "profession": "驱动器",
+        "profession": "ড্রাইভার",
         "dob": "25/12/1968",
         "address": "হাতনাবাদ, গোদাগাড়ী, রাজশাহী",
         "gender": "পুরুষ"
@@ -4249,7 +4249,7 @@ const voterDatabase = {
         "voter_no": "810399753778",
         "father": "মো: মুঞ্জুর রহমান",
         "mother": "মোসা: হানেফা বেগম",
-        "profession": "驱动器",
+        "profession": "ড্রাইভার",
         "dob": "15/10/1970",
         "address": "হাতনাবাদ, গোদাগাড়ী, রাজশাহী",
         "gender": "পুরুষ"
