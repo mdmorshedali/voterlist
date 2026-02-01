@@ -47,7 +47,7 @@ let state = {
     error: '',
     inputValid: true,
     hintMessage: 'আপনার নামের যে কোন অংশ বাংলায় লিখুন',
-    totalVoters: voterDatabase.totalVoters,
+    totalVoters: voterDatabase.totalVoters, 
     maleVoters: voterDatabase.maleVoters,
     femaleVoters: voterDatabase.femaleVoters,
     currentPage: 1,
@@ -81,7 +81,7 @@ function updateHintMessage() {
         }
     } else if (state.searchType === 'name') {
         if (state.searchQuery.trim() === '') {
-            state.hintMessage = '💡 আপনার নাম লিখুন (পুরো নাম বা অংশ)';
+            state.hintMessage = '💡 আপনার নাম লিখুন (পুরো নাম বা এক অংশ)';
             state.inputValid = true;
         } else if (state.searchQuery.trim().length < 2) {
             state.hintMessage = '⚠️ অন্তত ২টি অক্ষর লিখুন';
@@ -223,8 +223,8 @@ function renderSearchBox() {
     updateHintMessage();
     
     const placeholder = state.searchType === 'voter_id' 
-        ? 'আপনার ভোটার নম্বর লিখুন'
-        : 'আপনার নাম লিখুন (পুরো নাম বা অংশ)';
+        ? 'সিস্টেম টি ডেভেলপ করেছেন মোঃ মোর্শেদ আলী'
+        : 'সিস্টেম টি ডেভেলপ করেছেন মোঃ মোর্শেদ আলী';
         
     const inputClass = state.inputValid && state.searchQuery.trim() !== '' ? 'success' : 
                       !state.inputValid && state.searchQuery.trim() !== '' ? 'error' : '';
@@ -829,6 +829,7 @@ setTimeout(() => {
     const inputField = document.getElementById('search-input-field');
     if (inputField) inputField.focus();
 }, 500);
+
 
 
 
