@@ -21842,74 +21842,85 @@ const voterDatabase = {
 searchByName: function(searchTerm) {
     if (!searchTerm || searchTerm.trim() === '') return [];
     
-    const term = searchTerm.trim();
     const results = [];
     
+ 
+    const normalize = (text) => {
+        if (!text) return "";
+        return text
+            .replace(/[:।ঃ.]/g, '') 
+            .replace(/য়/g, 'য়')     
+            .replace(/\s+/g, ' ')   
+            .trim();
+    };
+
+    const term = searchTerm.trim();
+    const normalizedTerm = normalize(term);
+
     
-    if (term === "মোঃ" || term === "মো:" || term === "মোহাম্মদ" || term === "মোহাম্মদঃ") {
-        
+    const isMaleTitle = ["মোঃ", "মো", "মোহাম্মদ", "মো:"];
+    const isFemaleTitle = ["মোসাঃ", "মোসা", "মোসাম্মৎ", "মোসা:", "মোঃসাঃ"];
+
+    if (isMaleTitle.includes(term)) {
         for (let i = 0; i < this.voters.length; i++) {
             const voter = this.voters[i];
-            if (voter && voter.name && voter.name.startsWith("মোঃ") && voter.gender === "পুরুষ") {
+            if (voter && voter.name && (voter.name.startsWith("মোঃ") || voter.name.startsWith("মো:")) && voter.gender === "পুরুষ") {
                 results.push(voter);
             }
         }
         return results;
     }
-    
-  
-    if (term === "মোসাঃ" || term === "মোসা:" || term === "মোঃসাঃ" || term === "মোসাম্মৎ") {
-      
+
+    if (isFemaleTitle.includes(term)) {
         for (let i = 0; i < this.voters.length; i++) {
             const voter = this.voters[i];
-            if (voter && voter.name && voter.name.startsWith("মোসাঃ") && voter.gender === "মহিলা") {
+            if (voter && voter.name && (voter.name.startsWith("মোসাঃ") || voter.name.startsWith("মোসা:")) && voter.gender === "মহিলা") {
                 results.push(voter);
             }
         }
         return results;
     }
+
     
-  
     for (let i = 0; i < this.voters.length; i++) {
         const voter = this.voters[i];
-        
-      
         if (!voter || !voter.name) continue;
+
+        const normalizedVoterName = normalize(voter.name);
+
         
-        
-        if (voter.name.includes(term)) {
+        if (normalizedVoterName.includes(normalizedTerm)) {
             results.push(voter);
             continue;
         }
-        
+
        
-        const searchWords = term.split(/\s+/);
+        const searchWords = normalizedTerm.split(/\s+/);
         let allWordsMatch = true;
-        
+
         for (let j = 0; j < searchWords.length; j++) {
-            if (!voter.name.includes(searchWords[j])) {
+            if (!normalizedVoterName.includes(searchWords[j])) {
                 allWordsMatch = false;
                 break;
             }
         }
-        
+
         if (allWordsMatch && searchWords.length > 0) {
             results.push(voter);
         }
     }
-    
+
     return results;
 },
-    
-   
-    searchByVoterId: function(voterId) {
-        const searchId = voterId.toString();
-        for (let i = 0; i < this.voters.length; i++) {
-            const voter = this.voters[i];
-            if (voter && voter.voter_no === searchId) {
-                return [voter];
-            }
+
+searchByVoterId: function(voterId) {
+    const searchId = voterId.toString().trim();
+    for (let i = 0; i < this.voters.length; i++) {
+        const voter = this.voters[i];
+        if (voter && voter.voter_no === searchId) {
+            return [voter];
         }
-        return [];
     }
+    return [];
+}
 };
