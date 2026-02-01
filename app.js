@@ -831,6 +831,16 @@ setTimeout(() => {
 }, 500);
 
 
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js');
+    });
+}
+
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.onkeydown = e => {
+    if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 85 || e.keyCode === 83)) return false;
+};
 
 
 
