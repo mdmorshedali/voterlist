@@ -842,6 +842,19 @@ document.onkeydown = e => {
     if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 85 || e.keyCode === 83)) return false;
 };
 
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+}, false);
+
+document.onkeydown = function(e) {
+    if (e.ctrlKey && 
+        (e.keyCode === 67 || // C
+         e.keyCode === 86 || // V
+         e.keyCode === 85 || // U
+         e.keyCode === 83)) { // S
+        return false;
+    }
+};
 
 
 
